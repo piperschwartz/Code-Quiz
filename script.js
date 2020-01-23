@@ -14,6 +14,7 @@ function setTime() {
   }, 1000);
 }
 
+
 /*function setTime() 
 {
     timerInterval = setInterval (function ()
@@ -51,14 +52,15 @@ function displayQuestions() {
 
   questionDiv.appendChild(questionText);
 
-  for (i = 0; i < question.choices.length; i++) {
+  for (i = 0; i < question.choices.length; i++) 
+  {
     var option = document.createElement("button");
    //make an if statement to make the index stop with 4
     option.textContent = question.choices[i];
     option.setAttribute("class", "answer");
     option.addEventListener("click", function(e) {
       var optionClicked = e.target.innerHTML;
-      if ()
+     
       if (optionClicked === questions[questionIndex].answer) {
         alert("correct");
         displayQuestions(questionIndex++);
@@ -66,15 +68,18 @@ function displayQuestions() {
         localStorage.setItem("score", score);
         console.log(score);
         //localStorage.getItem("score").innerHTML;
+
       } else {
         alert("incorrect");
         displayQuestions(questionIndex++);
         secondsLeft -= 15;
+        
       }
-
+    
     });
-
+    
     questionDiv.appendChild(option);
   }
   questionsEl.appendChild(questionDiv);
-}
+};
+
