@@ -10,12 +10,36 @@
     <link rel="stylesheet" type="text/css" href="style.css">
 </head>
 <body>
-    <h1>Coding Quiz Challenge</h1>
-    <h3 class="Time"></h3>
-   <main class="questions"></main>
-   <button type="button" class="btn btn-outline-primary" id="start">Start Quiz</button>
+
+    <div class="container-md">
+            
+            <div class="card">
     
-  
+         <h1>Coding Quiz Challenge</h1>
+
+        <h3 class="Time"></h3>
+        
+            <div class="card-body">
+      
+    
+                <button type="button" class="btn btn-outline-primary" id="start">Start Quiz</button>
+                <button type="button" class="btn btn-secondary" id="viewHscores" onclick="viewAllScores">View All High Scores</button>
+
+                 <main class="questions"></main>
+                <p id="answer-div"></p>
+            </div>
+            <div id="nameDiv">
+                Enter Your Initials Here: <input type="text" id="hsInitials" value="">
+                <button type="button" class="btn btn-secondary" id="submitName" onclick="retrieveName()">Submit</button>
+
+
+            </div>
+            <div id="scoresDiv" class="text-center" style="display:none">
+                <button type="button" class="btn btn-info" id="goBack" onclick="startOver()">Go Back</button>
+                <button type="button" class="btn btn-info" id="clearHscores" onclick="clearScores()">Clear High Scores</button>
+            </div>
+
+    </div>
 
     <script src="script.js"></script>
     <script src="questions.js"></script>

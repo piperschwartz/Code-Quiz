@@ -3,7 +3,6 @@
     color: white;
     border: none;
     
-    
 }
 
 h1 {
@@ -11,3 +10,21 @@ h1 {
 }
 
 
+.questions {
+    text-align: center;
+}
+
+.btn {    
+    text-align: center;
+
+
+}
+
+#viewHscores {
+    background-color: purple;
+    color: white;
+    border: none;
+    /* float: left; */
+    
+
+}
